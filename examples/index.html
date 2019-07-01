@@ -1,0 +1,16 @@
+
+<div>
+  <div class="dialog">
+    <% if(typeof title === 'string'){ %>
+    <div class="dialog__hd">
+      <strong class="dialog__title"><%=title%></strong>
+    </div>
+    <% } %>
+    <div class="dialog__bd"><%=content%></div>
+    <div class="dialog__ft">
+    <% for(var i = 0; i < buttons.length; i++){ %>
+      <%=include('./examples/include.html', {button: buttons[i]})%>
+    <% } %>
+    </div>
+  </div>
+</div>

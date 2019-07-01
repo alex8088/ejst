@@ -1,0 +1,25 @@
+{
+  "name": "ejst",
+  "version": "1.0.0",
+  "description": "A embedded javascript template engine for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex8088/ejst.git"
+  },
+  "keywords": [
+    "javascript",
+    "template",
+    "html",
+    "jst"
+  ],
+  "author": "alex.wei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alex8088/ejst/issues"
+  },
+  "homepage": "https://github.com/alex8088/ejst#readme"
+}
