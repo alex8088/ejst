@@ -49,7 +49,7 @@ const renderFile = (name, data = {}) => {
   if (tpl) {
     return render(tpl, data)
   } else {
-    let _path = path.join(__dirname, name)
+    let _path = path.join(__dirname, '..', '..', name)
     if (fs.existsSync(_path)) {
       data.include = renderFile
       tpl = fs.readFileSync(_path, 'utf8')
