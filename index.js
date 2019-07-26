@@ -47,6 +47,7 @@ exports.render = render
 const renderFile = (name, data = {}) => {
   let tpl = cacheTemplates[name]
   if (tpl) {
+    data.include = renderFile
     return render(tpl, data)
   } else {
     let _path = path.join(__dirname, '..', '..', name)
